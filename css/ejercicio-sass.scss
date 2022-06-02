@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Lato", sans-serif;
+}
+
+main {
+	display: flex;
+	inline-size: 100%;
+	block-size: 100vh;
+}
+
+.perfil {
+	inline-size: 50%;
+	padding-top: 50px;
+	&__avatar {
+		display: block;
+		margin: 0 auto;
+		border-radius: 50%;
+	}
+
+	&__nombre {
+		font-size: 20px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__titulo {
+		font-size: 12px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__boton {
+		margin: 15px auto;
+		padding-block-start: 15px;
+		inline-size: 100px;
+		block-size: 40px;
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		border-radius: 20px;
+	}
+}
