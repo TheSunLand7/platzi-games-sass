@@ -1,0 +1,28 @@
+@use "globales";
+
+.articulos {
+	inline-size: 50%;
+	padding: 50px 100px;
+	background-color: globales.$color-bg-articles;
+}
+
+.articulo {
+	margin-bottom: 75px;
+	border-bottom: 3px solid globales.$color-bg-profile;
+	// color: globales.$color-claro;
+	&__categoria {
+		font-size: 16px;
+		font-weight: 700;
+		color: globales.$color-bg-profile;
+		@include globales.titulos(globales.$fuente2);
+	}
+	&__titulo {
+		margin: 0;
+		font-size: 20px;
+		@include globales.titulos(globales.$fuente2);
+	}
+	&__descripcion {
+		margin-bottom: 30px;
+		padding-right: 100px;
+	}
+}
